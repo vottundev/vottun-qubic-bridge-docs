@@ -1,4 +1,4 @@
-# This is the official list of people who can contribute (and typically have contributed) code to the Qubic Bridge repository.
+# This is the official list of people who can contribute (and typically have contributed) to the Vottun Qubic Bridge repository.
 
 - Ceseshi
 - anarojoagusti
