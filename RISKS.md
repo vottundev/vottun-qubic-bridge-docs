@@ -20,7 +20,7 @@ The purpose of this document is to outline potential risks and dependencies for 
 | R7      | Inadequate liquidity for token swaps across the bridge | Medium        | Low         | Establish partnerships with liquidity providers and incentivize early liquidity provision. | Qubic team |
 | R8     | Loss of trust as a result of security incidents or miscommunication with users | High          | Medium      | Develop a robust incident response plan and maintain clear, transparent communication with users. | TBD |
 |R9      |lack of attention from Qubic's stakeholders to the development team | High | Medium | have the necessary communication channels to be able to resolve the development team's doubts | Qubic Team |
-
+|R10      |Using Metamask Flask to connect the user wallet is not ready for production environments until Metamask team deploys a safe realease | High | Medium | Nowadays cant be done in a secure way | Qubic Team |
 ---
 
 ## Dependencies
@@ -35,6 +35,6 @@ The purpose of this document is to outline potential risks and dependencies for 
 | D6            | Security audits and review processes by 3rd party | High          | Schedule audits well in advance. | rasito99 |
 | D7            | Dependency on reliable server infrastructure for bridge operations | High          | Use scalable, decentralized infrastructure options where possible; have disaster recovery plans. | Vottun Team |
 | D8           | Secure and compliant storage for user transaction data | Medium        | Implement data encryption and access control policies; work with compliance to align on data retention. | alexlopezt |
-
+| D9           | Metamask Flask with Snaps in production environment | High        | Metamask should be ready for produccion environments | Vottun & Qubic Team |
 
 ---
