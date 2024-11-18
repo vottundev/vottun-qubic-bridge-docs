@@ -20,7 +20,7 @@ The purpose of this document is to outline potential risks and dependencies for 
 | R7      | Inadequate liquidity for token swaps across the bridge | Medium        | Low         | Establish partnerships with liquidity providers and incentivize early liquidity provision. | Qubic team |
 | R8     | Loss of trust as a result of security incidents or miscommunication with users | High          | Medium      | Develop a robust incident response plan and maintain clear, transparent communication with users. | TBD |
 |R9      |lack of attention from Qubic's stakeholders to the development team | High | Medium | have the necessary communication channels to be able to resolve the development team's doubts | Qubic Team |
-|R10      |Using Metamask Flask to connect the user wallet is not ready for production environments until Metamask team deploys a safe realease | High | Medium | Nowadays cant be done in a secure way | Qubic Team |
+|R10      |Using Metamask Flask to connect the user wallet is not ready for production environments until Metamask team deploys a safe realease | High | Medium | At the moment cant be done in a secure way | Qubic Team |
 ---
 
 ## Dependencies
