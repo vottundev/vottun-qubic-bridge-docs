@@ -1,0 +1,67 @@
+1. Admin (Owner)
+
+Main Responsibilities:
+- Is the creator and sole administrator of the contract.
+- Has the power to add or remove managers at any time.
+- Is the only role with full access to modify global rules or critical contract configurations.
+
+Key Functions:
+- Add a new manager.
+- Remove a manager.
+- Transfer the Admin role to another administrator.
+
+Security:
+- Only the wallet that deploys the smart contract (SC) will be the initial administrator.
+- High-level private key security measures are recommended, such as cold wallets, multisig setups, or external validation processes.
+
+
+
+2. Managers
+
+Main Responsibilities:
+- Manage operators (Operators) by assigning or revoking them as needed.
+- Act as intermediaries between the Admin and the Operators, executing policies defined by the Admin.
+
+Key Functions:
+- Add new operators.
+- Remove an operator who is no longer needed or trustworthy.
+
+Security:
+- If a manager acts improperly or becomes unreliable, the Admin can revoke their role immediately.
+- There must be at least 3 managers, each establishing a node.
+- A manager cannot assign the manager role to another user.
+- High-level private key security measures are recommended, such as cold wallets, multisig setups, or external validation processes.
+
+
+3. Operators
+ 
+Main Responsibilities:
+-Act as backend nodes interacting with the contracts.
+- Can include initial nodes (pre-configured at the time of contract deployment) and future nodes dynamically added by the Managers.
+- Contracts should be designed to dynamically accommodate new operators without disrupting service.
+
+Key Functions:
+- Execute and transmit commands while interacting with the contracts.
+
+Security:
+- If an operator fails or acts improperly, Managers can quickly revoke their role and add a replacement.
+- An operator cannot assign their role to another operator.
+- Since nodes will need access to private keys for signing operations, it is recommended to implement a secure and reliable online key storage system.
+
+
+Multisig
+
+In Ethereum:
+- It is recommended to implement a recognized multisig address, such as Safe, for the Admin role.
+- Alternatively, the contracts can be deployed with an EOA wallet, and the Admin role can later be transferred to a multisig wallet.
+- For both Admin and Manager roles, private keys should be stored in cold wallets.
+
+In Qubic:
+
+Required Validations:
+- Before implementing the multisig system, confirm that Qubic supports native multi-signature functionality or additional libraries.
+- Currently, Qubic does not support Ledger, which complicates key management with hardware wallets.
+
+Provisional Alternatives:
+- If multisig is not available, implementing a robust hierarchical role system can mitigate similar risks.
+- Design a recovery system for critical nodes that may be lost or compromised.
